@@ -1,0 +1,3 @@
+Work out when in a building to increase rendering FPS
+
+work out when your out of a building so to turn off stairs

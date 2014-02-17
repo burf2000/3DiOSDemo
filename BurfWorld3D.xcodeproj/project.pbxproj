@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8418A88A189996600091D442 /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 8418A889189996600091D442 /* Plane.m */; };
+		8418A88B1899A33C0091D442 /* CubeShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8418A884189996460091D442 /* CubeShader.fsh */; };
+		8418A88C1899A33C0091D442 /* CubeShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8418A885189996460091D442 /* CubeShader.vsh */; };
+		841B938718AC12EB00913097 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 841B938618AC12EB00913097 /* TODO.txt */; };
+		84AF55E4189831C000CC316A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55E3189831C000CC316A /* Foundation.framework */; };
+		84AF55E6189831C000CC316A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55E5189831C000CC316A /* CoreGraphics.framework */; };
+		84AF55E8189831C000CC316A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55E7189831C000CC316A /* UIKit.framework */; };
+		84AF55EA189831C000CC316A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55E9189831C000CC316A /* GLKit.framework */; };
+		84AF55EC189831C000CC316A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55EB189831C000CC316A /* OpenGLES.framework */; };
+		84AF55F2189831C000CC316A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84AF55F0189831C000CC316A /* InfoPlist.strings */; };
+		84AF55F4189831C000CC316A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF55F3189831C000CC316A /* main.m */; };
+		84AF55FB189831C000CC316A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF55F9189831C000CC316A /* Main_iPhone.storyboard */; };
+		84AF55FE189831C000CC316A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AF55FC189831C000CC316A /* Main_iPad.storyboard */; };
+		84AF5607189831C000CC316A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AF5606189831C000CC316A /* Images.xcassets */; };
+		84AF560E189831C000CC316A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF560D189831C000CC316A /* XCTest.framework */; };
+		84AF560F189831C000CC316A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55E3189831C000CC316A /* Foundation.framework */; };
+		84AF5610189831C000CC316A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF55E7189831C000CC316A /* UIKit.framework */; };
+		84AF5628189833BE00CC316A /* RenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF5627189833BE00CC316A /* RenderViewController.m */; };
+		84AF562B189833CC00CC316A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF562A189833CC00CC316A /* AppDelegate.m */; };
+		84AF56301898341800CC316A /* DuoGamerSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF562F1898341800CC316A /* DuoGamerSDK.m */; };
+		84AF56321898357B00CC316A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF56311898357B00CC316A /* CoreMotion.framework */; };
+		84AF56341898358300CC316A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF56331898358300CC316A /* ExternalAccessory.framework */; };
+		84AF563D18983A7D00CC316A /* PlaneShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 84AF56351898377900CC316A /* PlaneShader.fsh */; };
+		84AF563E18983A7D00CC316A /* PlaneShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 84AF56361898377900CC316A /* PlaneShader.vsh */; };
+		84AF563F18983A7D00CC316A /* SkyboxShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 84AF56371898377900CC316A /* SkyboxShader.fsh */; };
+		84AF564018983A7D00CC316A /* SkyboxShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 84AF56381898377900CC316A /* SkyboxShader.vsh */; };
+		84AF569318985DAC00CC316A /* Object3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF569118985DAC00CC316A /* Object3D.m */; };
+		84AF569618985F0300CC316A /* Skybox.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF569518985F0300CC316A /* Skybox.m */; };
+		84AF569C1898F42400CC316A /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF569B1898F42400CC316A /* Cube.m */; };
+		F46EF6ED189ED49D00D57F99 /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = F46EF6EC189ED49D00D57F99 /* Building.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84AF5611189831C000CC316A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AF55D8189831C000CC316A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84AF55DF189831C000CC316A;
+			remoteInfo = BurfWorld3D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8418A884189996460091D442 /* CubeShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CubeShader.fsh; path = Shaders/CubeShader.fsh; sourceTree = "<group>"; };
+		8418A885189996460091D442 /* CubeShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = CubeShader.vsh; path = Shaders/CubeShader.vsh; sourceTree = "<group>"; };
+		8418A888189996600091D442 /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plane.h; path = Classes/Objects/Plane.h; sourceTree = "<group>"; };
+		8418A889189996600091D442 /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plane.m; path = Classes/Objects/Plane.m; sourceTree = "<group>"; };
+		841B938618AC12EB00913097 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TODO.txt; path = BurfWorld3D/TODO.txt; sourceTree = "<group>"; };
+		84AF55E0189831C000CC316A /* BurfWorld3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurfWorld3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AF55E3189831C000CC316A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84AF55E5189831C000CC316A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84AF55E7189831C000CC316A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84AF55E9189831C000CC316A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		84AF55EB189831C000CC316A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		84AF55EF189831C000CC316A /* BurfWorld3D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BurfWorld3D-Info.plist"; sourceTree = "<group>"; };
+		84AF55F1189831C000CC316A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84AF55F3189831C000CC316A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84AF55F5189831C000CC316A /* BurfWorld3D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BurfWorld3D-Prefix.pch"; sourceTree = "<group>"; };
+		84AF55FA189831C000CC316A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		84AF55FD189831C000CC316A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		84AF5606189831C000CC316A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84AF560C189831C000CC316A /* BurfWorld3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurfWorld3DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AF560D189831C000CC316A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84AF5626189833BE00CC316A /* RenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RenderViewController.h; path = Classes/Views/RenderViewController.h; sourceTree = "<group>"; };
+		84AF5627189833BE00CC316A /* RenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RenderViewController.m; path = Classes/Views/RenderViewController.m; sourceTree = "<group>"; };
+		84AF5629189833CC00CC316A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		84AF562A189833CC00CC316A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		84AF562E1898341800CC316A /* DuoGamerSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoGamerSDK.h; sourceTree = "<group>"; };
+		84AF562F1898341800CC316A /* DuoGamerSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoGamerSDK.m; sourceTree = "<group>"; };
+		84AF56311898357B00CC316A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		84AF56331898358300CC316A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		84AF56351898377900CC316A /* PlaneShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = PlaneShader.fsh; path = Shaders/PlaneShader.fsh; sourceTree = "<group>"; };
+		84AF56361898377900CC316A /* PlaneShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = PlaneShader.vsh; path = Shaders/PlaneShader.vsh; sourceTree = "<group>"; };
+		84AF56371898377900CC316A /* SkyboxShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SkyboxShader.fsh; path = Shaders/SkyboxShader.fsh; sourceTree = "<group>"; };
+		84AF56381898377900CC316A /* SkyboxShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = SkyboxShader.vsh; path = Shaders/SkyboxShader.vsh; sourceTree = "<group>"; };
+		84AF568E18985DAC00CC316A /* Object3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object3D.h; path = Classes/Objects/Object3D.h; sourceTree = "<group>"; };
+		84AF569118985DAC00CC316A /* Object3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Object3D.m; path = Classes/Objects/Object3D.m; sourceTree = "<group>"; };
+		84AF569418985F0300CC316A /* Skybox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Skybox.h; path = Classes/Objects/Skybox.h; sourceTree = "<group>"; };
+		84AF569518985F0300CC316A /* Skybox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Skybox.m; path = Classes/Objects/Skybox.m; sourceTree = "<group>"; };
+		84AF569A1898F42400CC316A /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = Classes/Objects/Cube.h; sourceTree = "<group>"; };
+		84AF569B1898F42400CC316A /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cube.m; path = Classes/Objects/Cube.m; sourceTree = "<group>"; };
+		F46EF6EA189ECE8300D57F99 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Classes/Constant.h; sourceTree = "<group>"; };
+		F46EF6EB189ED49D00D57F99 /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = Classes/Objects/Building.h; sourceTree = "<group>"; };
+		F46EF6EC189ED49D00D57F99 /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = Classes/Objects/Building.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84AF55DD189831C000CC316A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AF56341898358300CC316A /* ExternalAccessory.framework in Frameworks */,
+				84AF56321898357B00CC316A /* CoreMotion.framework in Frameworks */,
+				84AF55EC189831C000CC316A /* OpenGLES.framework in Frameworks */,
+				84AF55E6189831C000CC316A /* CoreGraphics.framework in Frameworks */,
+				84AF55E8189831C000CC316A /* UIKit.framework in Frameworks */,
+				84AF55EA189831C000CC316A /* GLKit.framework in Frameworks */,
+				84AF55E4189831C000CC316A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AF5609189831C000CC316A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AF560E189831C000CC316A /* XCTest.framework in Frameworks */,
+				84AF5610189831C000CC316A /* UIKit.framework in Frameworks */,
+				84AF560F189831C000CC316A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84AF55D7189831C000CC316A = {
+			isa = PBXGroup;
+			children = (
+				841B938618AC12EB00913097 /* TODO.txt */,
+				84AF55ED189831C000CC316A /* BurfWorld3D */,
+				84AF55E2189831C000CC316A /* Frameworks */,
+				84AF55E1189831C000CC316A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84AF55E1189831C000CC316A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84AF55E0189831C000CC316A /* BurfWorld3D.app */,
+				84AF560C189831C000CC316A /* BurfWorld3DTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84AF55E2189831C000CC316A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84AF56331898358300CC316A /* ExternalAccessory.framework */,
+				84AF56311898357B00CC316A /* CoreMotion.framework */,
+				84AF55E3189831C000CC316A /* Foundation.framework */,
+				84AF55E5189831C000CC316A /* CoreGraphics.framework */,
+				84AF55E7189831C000CC316A /* UIKit.framework */,
+				84AF55E9189831C000CC316A /* GLKit.framework */,
+				84AF55EB189831C000CC316A /* OpenGLES.framework */,
+				84AF560D189831C000CC316A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84AF55ED189831C000CC316A /* BurfWorld3D */ = {
+			isa = PBXGroup;
+			children = (
+				84AF562C1898340400CC316A /* Dependancies */,
+				84AF56241898339B00CC316A /* Classes */,
+				84AF5606189831C000CC316A /* Images.xcassets */,
+				84AF55EE189831C000CC316A /* Supporting Files */,
+			);
+			path = BurfWorld3D;
+			sourceTree = "<group>";
+		};
+		84AF55EE189831C000CC316A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84AF55F9189831C000CC316A /* Main_iPhone.storyboard */,
+				84AF55FC189831C000CC316A /* Main_iPad.storyboard */,
+				84AF56231898338800CC316A /* Shaders */,
+				84AF55EF189831C000CC316A /* BurfWorld3D-Info.plist */,
+				84AF55F0189831C000CC316A /* InfoPlist.strings */,
+				84AF55F3189831C000CC316A /* main.m */,
+				84AF55F5189831C000CC316A /* BurfWorld3D-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AF56231898338800CC316A /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8418A884189996460091D442 /* CubeShader.fsh */,
+				8418A885189996460091D442 /* CubeShader.vsh */,
+				84AF56351898377900CC316A /* PlaneShader.fsh */,
+				84AF56361898377900CC316A /* PlaneShader.vsh */,
+				84AF56371898377900CC316A /* SkyboxShader.fsh */,
+				84AF56381898377900CC316A /* SkyboxShader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		84AF56241898339B00CC316A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84AF5629189833CC00CC316A /* AppDelegate.h */,
+				84AF562A189833CC00CC316A /* AppDelegate.m */,
+				F46EF6EA189ECE8300D57F99 /* Constant.h */,
+				84AF568D18985D4F00CC316A /* Objects */,
+				84AF5625189833B000CC316A /* Views */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		84AF5625189833B000CC316A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84AF5626189833BE00CC316A /* RenderViewController.h */,
+				84AF5627189833BE00CC316A /* RenderViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84AF562C1898340400CC316A /* Dependancies */ = {
+			isa = PBXGroup;
+			children = (
+				84AF562D1898341800CC316A /* Duo */,
+			);
+			name = Dependancies;
+			sourceTree = "<group>";
+		};
+		84AF562D1898341800CC316A /* Duo */ = {
+			isa = PBXGroup;
+			children = (
+				84AF562E1898341800CC316A /* DuoGamerSDK.h */,
+				84AF562F1898341800CC316A /* DuoGamerSDK.m */,
+			);
+			name = Duo;
+			path = Dependancies/Duo;
+			sourceTree = "<group>";
+		};
+		84AF568D18985D4F00CC316A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				84AF568E18985DAC00CC316A /* Object3D.h */,
+				84AF569118985DAC00CC316A /* Object3D.m */,
+				84AF569418985F0300CC316A /* Skybox.h */,
+				84AF569518985F0300CC316A /* Skybox.m */,
+				84AF569A1898F42400CC316A /* Cube.h */,
+				84AF569B1898F42400CC316A /* Cube.m */,
+				8418A888189996600091D442 /* Plane.h */,
+				8418A889189996600091D442 /* Plane.m */,
+				F46EF6EB189ED49D00D57F99 /* Building.h */,
+				F46EF6EC189ED49D00D57F99 /* Building.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84AF55DF189831C000CC316A /* BurfWorld3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AF561D189831C000CC316A /* Build configuration list for PBXNativeTarget "BurfWorld3D" */;
+			buildPhases = (
+				84AF55DC189831C000CC316A /* Sources */,
+				84AF55DD189831C000CC316A /* Frameworks */,
+				84AF55DE189831C000CC316A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurfWorld3D;
+			productName = BurfWorld3D;
+			productReference = 84AF55E0189831C000CC316A /* BurfWorld3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84AF560B189831C000CC316A /* BurfWorld3DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AF5620189831C000CC316A /* Build configuration list for PBXNativeTarget "BurfWorld3DTests" */;
+			buildPhases = (
+				84AF5608189831C000CC316A /* Sources */,
+				84AF5609189831C000CC316A /* Frameworks */,
+				84AF560A189831C000CC316A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AF5612189831C000CC316A /* PBXTargetDependency */,
+			);
+			name = BurfWorld3DTests;
+			productName = BurfWorld3DTests;
+			productReference = 84AF560C189831C000CC316A /* BurfWorld3DTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84AF55D8189831C000CC316A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Compsoft;
+				TargetAttributes = {
+					84AF560B189831C000CC316A = {
+						TestTargetID = 84AF55DF189831C000CC316A;
+					};
+				};
+			};
+			buildConfigurationList = 84AF55DB189831C000CC316A /* Build configuration list for PBXProject "BurfWorld3D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84AF55D7189831C000CC316A;
+			productRefGroup = 84AF55E1189831C000CC316A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84AF55DF189831C000CC316A /* BurfWorld3D */,
+				84AF560B189831C000CC316A /* BurfWorld3DTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84AF55DE189831C000CC316A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8418A88B1899A33C0091D442 /* CubeShader.fsh in Resources */,
+				8418A88C1899A33C0091D442 /* CubeShader.vsh in Resources */,
+				84AF563D18983A7D00CC316A /* PlaneShader.fsh in Resources */,
+				84AF563E18983A7D00CC316A /* PlaneShader.vsh in Resources */,
+				84AF563F18983A7D00CC316A /* SkyboxShader.fsh in Resources */,
+				841B938718AC12EB00913097 /* TODO.txt in Resources */,
+				84AF564018983A7D00CC316A /* SkyboxShader.vsh in Resources */,
+				84AF55FE189831C000CC316A /* Main_iPad.storyboard in Resources */,
+				84AF55FB189831C000CC316A /* Main_iPhone.storyboard in Resources */,
+				84AF5607189831C000CC316A /* Images.xcassets in Resources */,
+				84AF55F2189831C000CC316A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AF560A189831C000CC316A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84AF55DC189831C000CC316A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AF5628189833BE00CC316A /* RenderViewController.m in Sources */,
+				8418A88A189996600091D442 /* Plane.m in Sources */,
+				F46EF6ED189ED49D00D57F99 /* Building.m in Sources */,
+				84AF569618985F0300CC316A /* Skybox.m in Sources */,
+				84AF55F4189831C000CC316A /* main.m in Sources */,
+				84AF56301898341800CC316A /* DuoGamerSDK.m in Sources */,
+				84AF562B189833CC00CC316A /* AppDelegate.m in Sources */,
+				84AF569318985DAC00CC316A /* Object3D.m in Sources */,
+				84AF569C1898F42400CC316A /* Cube.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AF5608189831C000CC316A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84AF5612189831C000CC316A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84AF55DF189831C000CC316A /* BurfWorld3D */;
+			targetProxy = 84AF5611189831C000CC316A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84AF55F0189831C000CC316A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AF55F1189831C000CC316A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84AF55F9189831C000CC316A /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AF55FA189831C000CC316A /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		84AF55FC189831C000CC316A /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AF55FD189831C000CC316A /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84AF561B189831C000CC316A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84AF561C189831C000CC316A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84AF561E189831C000CC316A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BurfWorld3D/BurfWorld3D-Prefix.pch";
+				INFOPLIST_FILE = "BurfWorld3D/BurfWorld3D-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84AF561F189831C000CC316A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BurfWorld3D/BurfWorld3D-Prefix.pch";
+				INFOPLIST_FILE = "BurfWorld3D/BurfWorld3D-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84AF5621189831C000CC316A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BurfWorld3D.app/BurfWorld3D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BurfWorld3D/BurfWorld3D-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BurfWorld3DTests/BurfWorld3DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84AF5622189831C000CC316A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BurfWorld3D.app/BurfWorld3D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BurfWorld3D/BurfWorld3D-Prefix.pch";
+				INFOPLIST_FILE = "BurfWorld3DTests/BurfWorld3DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84AF55DB189831C000CC316A /* Build configuration list for PBXProject "BurfWorld3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AF561B189831C000CC316A /* Debug */,
+				84AF561C189831C000CC316A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AF561D189831C000CC316A /* Build configuration list for PBXNativeTarget "BurfWorld3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AF561E189831C000CC316A /* Debug */,
+				84AF561F189831C000CC316A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AF5620189831C000CC316A /* Build configuration list for PBXNativeTarget "BurfWorld3DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AF5621189831C000CC316A /* Debug */,
+				84AF5622189831C000CC316A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84AF55D8189831C000CC316A /* Project object */;
+}
